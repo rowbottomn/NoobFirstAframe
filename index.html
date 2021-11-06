@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/1.2.0/aframe.min.js"></script>
+    
+  </head>
+  <body>
+    <a-scene>
+      <a-sky color="skyblue"></a-sky>
+      <a-entity id = "head" position = "0 1.6 -5">
+        <a-box id = "bill" position = "0 0 0" width = "5" height ="2" depth = "0.1"color = "goldenrod"></a-box>
+        <a-sphere id = "left-eye" position = "-4 1.5 0" scale = "1 1 0.1">
+          <a-sphere "left-pupil" color = "black" position = "0.3 -0.1 0.8" radius = "0.5" > </a-sphere>
+        </a-sphere>
+        <a-sphere id = "right-eye" position = "4 1.5 0" scale = "1 1 0.1" >
+            <a-sphere "right-pupil" color = "black" position = "0.3 -0.1 0.8" radius = "0.5" > </a-sphere>
+        </a-sphere>
+      </a-entity>
+    </a-scene>
+    <script src="script.js"></script>
+  </body>
+</html>
